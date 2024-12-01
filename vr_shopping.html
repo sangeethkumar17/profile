@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR Shopping - Project Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Ensure the body takes full height and the footer stays at the bottom */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .content {
+            min-height: calc(100vh - 56px - 56px);
+            /* Account for navbar and footer height */
+            padding-bottom: 56px;
+            /* Ensure content doesn't get overlapped by footer */
+        }
+
+        footer {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Ensures the image doesn't exceed the container width */
+        .project-image {
+            max-width: 27%;
+            /* Limits the image to the width of its container */
+            height: auto;
+            /* Maintains the aspect ratio */
+            display: block;
+            /* Prevents extra space below the image */
+            margin: 0 auto;
+            /* Centers the image horizontally */
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">Home</a>
+                        <!-- Link to the about section of index.html -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Back Button to Project Page -->
+    <section id="back-button" class="py-4">
+        <div class="container">
+            <a href="index.html" class="btn btn-secondary">Back to Projects</a>
+        </div>
+    </section>
+
+    <!-- Project Detail Section -->
+    <section id="project-detail" class="py-5 content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="text-center mb-4">VR Shopping</h2>
+                    <img src="VR shopping.png" class="img-fluid mb-4 project-image" alt="VR Shopping">
+                    <p class="lead">The VR Shopping project is an immersive virtual reality application that allows
+                        users to explore and shop in a fully interactive 3D environment, simulating a realistic retail
+                        experience.</p>
+                    <p>It leverages cutting-edge technology to enhance user engagement and streamline the online
+                        shopping process, providing a unique and enjoyable alternative to traditional e-commerce
+                        platforms.</p>
+                    <p><strong>Technologies Used:</strong> Unity, C#, VR simulator, 3D Modeling</p>
+                    <a href="https://youtu.be/2WY3tAgzLu8?si=5xCEDgtW4Pq07gdv" target="_blank" style="text-decoration: none; color: rgb(59, 59, 59);">Click here to : <strong>View Project</strong></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-2">
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

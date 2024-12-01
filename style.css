@@ -1,0 +1,332 @@
+body {
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navbar styles */
+.navbar {
+    transition: background-color 0.3s;
+    padding: 20px 0;  /* Increase padding to make navbar larger */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Add shadow effect */
+    background-color: rgba(36, 36, 65, 0.8);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar.scrolled {
+    background-color: rgba(36, 36, 65, 0.9);
+}
+
+/* Photo frame for About Me */
+/* Photo frame for About Me */
+.photo-frame {
+    width: 200px;  /* Set a fixed width for the frame */
+    height: 200px; /* Set a fixed height for the frame */
+    border-radius: 50%;  /* Circular shape */
+    overflow: hidden;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Increase the size of the profile photo */
+.photo-frame img {
+    width: 250px;  /* Adjust the width to make the photo larger */
+    height: 250px; /* Keep the height same as width for a circular shape */
+    object-fit: cover; /* Ensures the image covers the circle perfectly */
+}
+
+/* Optional: Add more shadow or border to the photo */
+.photo-frame img {
+    border: 5px solid #fff; /* White border around the profile picture */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add a deeper shadow effect */
+}
+
+
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark background sections */
+.bg-dark {
+    background-color: #2a2a2a !important;
+}
+
+/* Smooth scrolling for the whole page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Add margin to create space between navbar and About Me section */
+#about {
+    margin-top: 80px;  /* Adjust this value to your liking */
+}
+
+
+/* Optional: Change the color of the navbar when it scrolls */
+.navbar.scrolled {
+    background-color: rgba(36, 36, 65, 0.9);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);  /* Stronger shadow on scroll */
+}
+
+/* Customize navbar links */
+.navbar a {
+    font-size: 1.2rem;  /* Increase font size for better visibility */
+}
+
+/* Work Experience Styling */
+.work-experience {
+    background-color: #2c3e50; /* Dark background for work experience */
+    padding: 15px; /* Add padding to the content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+    margin-bottom: 20px; /* Space below each entry */
+    transition: transform 0.3s ease; /* Smooth scaling transition */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .work-experience {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .work-experience {
+        font-size: 12px; /* Further reduce font size for very small screens */
+        padding: 8px; /* Adjust padding for even smaller screens */
+    }
+}
+
+/* Hover effect for interactivity */
+.work-experience:hover {
+    transform: scale(1.05); /* Slightly enlarge the section on hover */
+}
+
+/* Custom Button Style */
+.btn-primary {
+    background-color: #4e73df; /* Bootstrap's primary color */
+    border-color: #4e73df;
+    padding: 8px 15px; /* Add some padding */
+    font-size: 14px; /* Font size for the button */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+/* Button hover effect */
+.btn-primary:hover {
+    background-color: #3a5bc0; /* Darker shade for hover effect */
+    border-color: #3a5bc0;
+}
+
+/* Adding some spacing between buttons and content */
+.card-body .btn {
+    margin-top: 15px;
+}
+
+/* Make the card bodies have uniform height */
+.card.h-100 {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1; /* Ensure the body grows to fill the available space */
+}
+
+/* Ensure all cards have equal height */
+.card {
+    height: 100%;
+}
+
+/* Add some spacing for the cards */
+.card-img-top {
+    height: 200px;
+    object-fit: cover; /* Ensure images cover the area without distortion */
+}
+
+/* Optional: Adjust button positioning for uniformity */
+.card-body .btn {
+    margin-top: auto; /* Push the button to the bottom of the card */
+}
+
+/* Change the text color to black inside the Education section */
+#education .card-body {
+    color: black;
+}
+
+/* Optional: Change the title color to black as well */
+#education .card-title {
+    color: black;
+}
+/* Education Section */
+#education {
+    background-color: #343a40;
+    color: white;
+}
+
+#education .card {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Adding a hover effect on the cards */
+#education .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensuring the cards have consistent height */
+#education .card-body {
+    padding: 20px;
+}
+
+#education .card-title {
+    color: #001e3d;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#education .card-text {
+    font-size: 1rem;
+    color: #3b4066;
+}
+
+/* Adding some padding to the section for better spacing */
+#education .container {
+    padding: 30px 0;
+}
+
+/* Adding margin to the card text */
+#education .card-text br {
+    margin-bottom: 5px;
+}
+
+/* Achievements Section */
+#achievements {
+    background-color: #f8f9fa; /* Light background for the section */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Card Styling */
+#achievements .card {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Adding hover effect for the cards */
+#achievements .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Body */
+#achievements .card-body {
+    padding: 20px;
+}
+
+/* Title Style */
+#achievements .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #001e3d; /* Blue color for titles */
+}
+
+/* Text Style */
+#achievements .card-text {
+    font-size: 1rem;
+    color: #3b4066; /* Darker color for the text */
+}
+
+/* Responsive Layout: Cards should stay in a single row on large screens, and stack on smaller screens */
+@media (max-width: 767px) {
+    #achievements .col-md-6 {
+        margin-bottom: 20px; /* Adds space between cards in small view */
+    }
+}
+
+#golden-cube {
+    padding: 40px 20px;
+}
+
+#golden-cube .card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+#golden-cube .card:hover {
+    transform: scale(1.05);
+}
+
+#golden-cube h2, 
+#golden-cube p {
+    margin-bottom: 20px;
+}
+
+/* About Section Styling */
+#about {
+    background-color: #212529; /* Dark background for About Section */
+    color: #ffffff;
+    padding: 5rem 0;
+}
+
+.about-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-text {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #dcdcdc;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.about-img {
+    width: 80%;
+    max-width: 250px;
+    border: 5px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.photo-frame {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive design */
+@media (max-width: 767px) {
+    .about-img {
+        width: 60%;
+    }
+
+    .about-heading {
+        font-size: 2rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+
+    .col-md-4, .col-md-8 {
+        text-align: center;
+    }
+}
