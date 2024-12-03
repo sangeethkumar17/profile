@@ -60,16 +60,21 @@
             </div>
             <div class="col-md-8 pt-4">
                 <h2 class="about-heading">About Me</h2>
-                <p class="about-text">Highly motivated and skilled software engineer with experience in front-end development using
+                <p class="about-text">Highly motivated and skilled software engineer with experience in front-end
+                    development using
                     Angular and TypeScript. Proven track record in building interactive web applications, including
                     an 8-month tenure developing a Smart Hostel Management System at SBNA Software Solutions.
                     Passionate about 3D modeling, VR development, and exploring cutting-edge technology. Strong
                     problem-solving skills and a commitment to delivering high-quality, user-focused solutions.
                     Currently pursuing an MCA with expected graduation in 2025.</p>
+                <a href="Sangeethkumar_Resume.pdf" download="Sangeethkumar_Resume" class="btn btn-primary mt-3">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
             </div>
         </div>
     </div>
 </section>
+
 
 
 
@@ -225,8 +230,8 @@
                         <div class="card-body text-center">
                             <h5 class="card-title">Follow me on Instagram</h5>
                             <p class="card-text">Get inspired by my 3D art, modeling, and animation projects.</p>
-                            <a href="https://www.instagram.com/__golden_cube_/profilecard/?igsh=MWRpd2V0NXpnMWxsMQ==" target="_blank"
-                                class="btn btn-primary">Visit Instagram</a>
+                            <a href="https://www.instagram.com/__golden_cube_/profilecard/?igsh=MWRpd2V0NXpnMWxsMQ=="
+                                target="_blank" class="btn btn-primary">Visit Instagram</a>
                         </div>
                     </div>
                 </div>
@@ -299,52 +304,56 @@
     </section>
 
 
-<!-- Contact Section -->
-<section id="contact" class="py-5 bg-dark text-white">
-    <div class="container">
-        <h2 class="text-center mb-4">Contact Me</h2>
-        <p class="text-center">Feel free to reach out to me using the form below.</p>
-        <form id="contactForm" action="https://formspree.io/f/mnnqoyzb" method="POST" class="mt-4">
-            <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
-            </div>
-            <div class="form-group mt-3">
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
-            </div>
-            <div class="form-group mt-3">
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" class="form-control" rows="5" placeholder="Type your message" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary mt-4 w-100">Send Message</button>
-            <div id="loadingIndicator" class="text-center mt-3" style="display: none;">
-                <div class="spinner-border text-primary" role="status">
-                    <span class="sr-only">Sending...</span>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Me</h2>
+            <p class="text-center">Feel free to reach out to me using the form below.</p>
+            <form id="contactForm" action="https://formspree.io/f/mnnqoyzb" method="POST" class="mt-4">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name"
+                        required>
                 </div>
-                <p>Sending your message...</p>
+                <div class="form-group mt-3">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email"
+                        required>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" class="form-control" rows="5" placeholder="Type your message"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary mt-4 w-100">Send Message</button>
+                <div id="loadingIndicator" class="text-center mt-3" style="display: none;">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="sr-only">Sending...</span>
+                    </div>
+                    <p>Sending your message...</p>
+                </div>
+            </form>
+            <div class="mt-4 text-center">
+                <!-- LinkedIn Icon -->
+                <a href="https://www.linkedin.com/in/sangeethkumar-m-link" target="_blank" class="text-white mx-2">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+                <!-- Instagram Icon -->
+                <a href="https://www.instagram.com/__golden_cube_/profilecard/?igsh=MWRpd2V0NXpnMWxsMQ=="
+                    target="_blank" class="text-white mx-2">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
             </div>
-        </form>
-        <div class="mt-4 text-center">
-            <!-- LinkedIn Icon -->
-            <a href="https://www.linkedin.com/in/sangeethkumar-m-link" target="_blank" class="text-white mx-2">
-                <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-            <!-- Instagram Icon -->
-            <a href="https://www.instagram.com/__golden_cube_/profilecard/?igsh=MWRpd2V0NXpnMWxsMQ==" target="_blank" class="text-white mx-2">
-                <i class="fab fa-instagram fa-2x"></i>
-            </a>
         </div>
-    </div>
-</section>
+    </section>
 
-<script>
-    // Add event listener to show loading animation
-    document.getElementById('contactForm').addEventListener('submit', function (event) {
-        const loadingIndicator = document.getElementById('loadingIndicator');
-        loadingIndicator.style.display = 'block';
-    });
-</script>
+    <script>
+        // Add event listener to show loading animation
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            const loadingIndicator = document.getElementById('loadingIndicator');
+            loadingIndicator.style.display = 'block';
+        });
+    </script>
 
 
 
